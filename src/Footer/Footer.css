@@ -1,0 +1,247 @@
+.footer {
+  background-color: #0d2436;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 64px 90px 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 24px;
+}
+.footer-info-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+  img {
+    max-width: 106px;
+    margin: 0 auto;
+  }
+}
+.footer-main-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+/* INFO */
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+.footer-info-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  margin: 24px;
+
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 16px;
+  }
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    margin: 8px 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
+/* FOOTER-BOT */
+.footer-bot {
+  padding: 24px;
+  height: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/* ==================================== */
+/* Адаптивность */
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .footer {
+    padding: 54px 70px 0;
+  }
+  .footer-main {
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+  }
+  .footer-main-social {
+    margin-bottom: 20px;
+  }
+  .footer-info-img {
+    margin-right: 50px;
+    img {
+      max-width: 106px;
+    }
+  }
+  /* INFO */
+  .footer-info {
+    flex-wrap: nowrap;
+    width: 100%;
+    flex: 1 1 100%;
+    gap: 10px;
+  }
+  .footer-info-item {
+    max-width: 180px;
+    margin: 10px;
+    h5 {
+      font-size: 18px;
+      margin: 0 0 16px;
+    }
+    a {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1099px) {
+  .footer {
+    padding: 40px 50px 0;
+  }
+  .footer-main {
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+  }
+  .footer-main-social {
+    margin-bottom: 10px;
+  }
+  .footer-info-img {
+    margin-right: 50px;
+    img {
+      max-width: 80px;
+    }
+  }
+  /* INFO */
+  .footer-info {
+    flex-wrap: nowrap;
+    width: 100%;
+    flex: 1 1 100%;
+    gap: 15px;
+  }
+  .footer-info-item {
+    max-width: 180px;
+    margin: 0;
+    flex: 1 1 100%;
+    h5 {
+      font-size: 16px;
+      margin: 0 0 14px;
+    }
+    a {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .footer {
+    padding: 40px 30px 0;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .footer-info-img {
+    flex: 1 1 100%;
+    margin: 0 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    img {
+      max-width: 80px;
+    }
+  }
+  .footer-main-social {
+    margin: 30px 0;
+  }
+  /* INFO */
+  .footer-info {
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 10px;
+  }
+  .footer-info-item {
+    min-width: 110px;
+    margin: 0;
+    flex: 1 1 100%;
+    h5 {
+      font-size: 16px;
+      margin: 0 0 14px;
+    }
+    a {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .footer {
+    padding: 40px 30px 0;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .footer-info-img {
+    flex: 1 1 100%;
+    margin: 0 0 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    img {
+      max-width: 80px;
+    }
+  }
+  .footer-main-social {
+    margin: 30px 0;
+  }
+  /* INFO */
+  .footer-info {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+  .footer-info-item {
+    min-width: 110px;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    flex: 1 1 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    h5 {
+      font-size: 16px;
+      margin: 0 0 14px;
+    }
+    a {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

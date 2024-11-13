@@ -1,0 +1,142 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #fafafa;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-img {
+  display: block;
+  max-width: 50%;
+  transition: all 0.5s ease;
+}
+.slider-content {
+  max-width: 600px;
+  padding: 0 100px;
+  h1 {
+    text-align: left;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    margin: 20px 0;
+  }
+  p {
+    text-align: left;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  h3 {
+    text-align: left;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+}
+
+/* BUTTON */
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+.slider-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+.slider-button:hover {
+  scale: 1.15;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #717171;
+}
+/* ==================================== */
+/* Адаптивность */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .slider {
+    flex-wrap: nowrap;
+  }
+  .slider-img {
+    max-width: 50%;
+  }
+  .slider-content {
+    max-width: 500px;
+    padding: 0 50px;
+    h1 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .slider {
+    flex-wrap: wrap;
+  }
+  .slider-img {
+    max-width: 100%;
+  }
+  .slider-content {
+    max-width: 55%;
+    padding: 0 30px;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+  .slider-button {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
