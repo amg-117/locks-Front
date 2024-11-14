@@ -12,7 +12,6 @@ function App() {
       <Stat />
       <CallBack />
       <Footer />
-      sad
     </>
   );
 }
